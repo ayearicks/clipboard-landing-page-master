@@ -215,6 +215,7 @@ footer #social-links li {
 @media (min-width: 576px) {
   header {
     background: url("images/bg-header-desktop.png") no-repeat;
+    background-size: cover;
   }
   #company-icons img {
     width: 50%;
