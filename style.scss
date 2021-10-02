@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+//Color Variables
+$Cyan: hsl(171, 66%, 44%);
+$Blue: hsl(233, 100%, 69%);
+$DarkGray: hsl(210, 10%, 33%);
+$LightGray: hsl(201, 11%, 66%);
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif; //400, 600
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: $DarkGray;
+}
+
+p {
+    color: $LightGray;
+    line-height: 1.8;
+}
+
+
+header {
+    background: url('images/bg-header-mobile.png') no-repeat;
+    padding-top: 5rem;
+}
+
+#header-text h1 {
+    font-size: 30px;
+    width: 80%;
+    margin: 2rem auto 1rem auto;
+}
+
+#header-text p {
+    margin: 0 auto 2rem auto;
+    padding: 0 .5rem;
+}
+
+#header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 5.5rem;
+    margin: 1rem 0;
+    border-radius: 50px;
+}
+
+.ios-link {
+    background-color: $Cyan;
+    box-shadow: 2.5px 4px hsl(171, 66%, 34%);
+}
+
+.mac-link {
+    background-color: $Blue;
+    border: none;
+    box-shadow: 2.5px 4px hsl(233, 100%, 60%);
+}
+
+#snippets {
+    margin-top: 10rem;
+    padding: 0 1rem;
+}
+
+#search img {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+#search h3 {
+    margin-top: 5rem;
+    font-size: 26px;
+}
+
+#search p {
+    padding: 0 1rem;
+}
+
+#access-anywhere {
+    margin-top: 10rem;
+    padding: 0 1rem;
+}
+
+#access-anywhere img {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+#workflow {
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.icon-group img {
+    margin-top: 5rem;
+}
+
+#company-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7rem;
+}
+
+#company-icons img {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+#bottom-hero p {
+    padding: 2rem;
+}
+
+#bottom-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer {
+    margin-top: 10rem;
+    background-color: hsl(201, 20%, 95%);
+    padding: 0;
+}
+
+footer .logo img{
+    width: 50px;
+    margin: 2.5rem auto;
+}
+
+footer #company-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+footer #company-links li {
+    margin-top: 2rem;
+}
+
+
+footer #company-links a {
+    text-decoration: none;
+    color: $DarkGray;
+}
+
+footer #social-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1.5rem auto;
+    padding: 0;
+
+}
+
+footer #social-links li {
+    justify-content: space-between;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    header {
+        background: url('images/bg-header-desktop.png') no-repeat;
+    }
+
+    #company-icons img {
+        width: 50%;
+        margin: 2.5rem auto;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #header-text p {
+        width: 70%;
+    }
+
+    #header-links {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #snippets {
+        padding: 0 5rem;
+    }
+
+    #search {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    #search-text {
+        text-align: left;
+        padding: 0 5rem;
+    }
+
+    #search p {
+        padding: 0;
+    }
+
+    #access-anywhere {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #workflow {
+        margin-top: 5rem;
+    }
+
+    .workflow-content {
+        display: flex;
+    }
+
+    #company-icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #company-icons img {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    #bottom-links {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    footer #company-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+    }
+ }
